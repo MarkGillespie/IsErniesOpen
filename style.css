@@ -7,7 +7,7 @@ body {
     margin: 0px;
     padding: 0px;
     height: 100%;
-    background: url("https://lh4.googleusercontent.com/-wkrGBuk0DoA/Us9JnUoXnTI/AAAAAAAAkTA/yDQexzLKhKY/s1920-w1920-h1080-c/DSC_0660.JPG") no-repeat center center fixed;
+    background: black no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -21,7 +21,7 @@ div.page_contents{
 }
 
 div.header {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
     font-size: 400%;
     text-shadow: 0px 0px 8px #000000;
     color: #FFFFFF;
@@ -31,8 +31,18 @@ div.header {
     height: 100px;
 }
 
+div.horrible_spacer {
+    height: 20px;
+}
+
+
+div.author_text {
+    height: 30px;
+    font-size: 50%;
+}
+
 div.footer {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
     text-shadow: 0px 0px 10px #000000;
     font-size: 300%;
     text-align: right;
@@ -46,23 +56,48 @@ div.small_text {
     font-size: 50%;
 }
 
-div.map_container {
-    background: rgb(255, 255, 255);
+div.center_band {
     position: absolute;
     top: 50%;
     width: 100%;
     transform: translateY(-50%);    
-    padding: 20px;
-    box-shadow: 0px 0px 50px #000;
+    padding: 0;
+    margin: 0;
+}
+
+div.content_wrapper {
+    displcay: block;
+    position: relative;
+    margin: 0 auto;
+    overflow: auto;
+    max-width: 90%;
+    width: fit-content;
 }
 
 div.map {
     width: 500px;
     height: 500px;
-    display: block;
-    position: relative;
     background: url("map.png") no-repeat;
-    background-size: 100%;
-    margin: 0 auto;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 10px #000;
+    float: left;
 }
 
+h1 {
+    font-weight: normal;
+}
+
+div.specials {
+    margin-left: 20px;
+    float: left;
+    text-shadow: 0px 0px 10px #000000;
+    font-weight: normal;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+div.special {
+    font-size: 150%;
+    padding-left: 2em;
+    text-indent: -1.5em;
+}
